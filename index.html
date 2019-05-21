@@ -8,9 +8,6 @@ cardContent: Supporting Text is an essential part of a website. This part is cru
 
 <link type="text/css" href="../css/index.css" rel="stylesheet" />
 
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="../js/index.js"></script>
 <div class="container-fluid tiles-container">
     <div class="row tile-row tile-row-left bg-warning">
         <div class="para para-left">
@@ -45,18 +42,45 @@ cardContent: Supporting Text is an essential part of a website. This part is cru
     </div>
 </div>
 
-<div class="testimonial-container">
+<div class="testimonial-container carousel slide" data-ride="carousel">
     {% assign moniallist = site.data.testimonials %}
-    {% for testimonial in moniallist %}
-        <div class="testimonial">
-            <div class="person-info">
-                <img class="profilepic" src="assets/imgs/{{ testimonial.profilepic }}" alt="Profile picture of {{ testimonial.name }}">
-                <b class="name">{{testimonial.name}}</b>
-                <b class="designation">{{testimonial.designation}}</b>
+    <ol class="carousel-indicators">
+        {% assign num = 0 %}
+        {% for testimonial in moniallist %}
+            {% assign class = nil %}
+            {% if num == 0 %}
+                {% assign class = "active" %}
+            {% endif %}
+            <li data-target="#carouselExampleIndicators" data-slide-to="{{num}}" class="{{class}}"></li>
+            {% assign num = num | plus:1 %}
+        {% endfor %}
+    </ol>
+    <div class="carousel-inner">
+        {% assign num = 0 %}
+        {% for testimonial in moniallist %}
+            {% assign class = nil %}
+            {% if num == 0 %}
+                {% assign class = "active" %}
+            {% endif %}
+            <div class="testimonial carousel-item {{class}}">
+                <div class="person-info">
+                    <img class="profilepic" src="assets/imgs/{{ testimonial.profilepic }}" alt="Profile picture of {{ testimonial.name }}">
+                    <b class="name">{{testimonial.name}}</b>
+                    <b class="designation">{{testimonial.designation}}</b>
+                </div>
+                <div class="text">
+                    {{testimonial.text}}
+                </div>
             </div>
-            <div class="text">
-                {{testimonial.text}}
-            </div>
-        </div>
-    {% endfor %}
+            {% assign num = num | plus:1 %}
+        {% endfor %}
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
