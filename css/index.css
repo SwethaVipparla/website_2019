@@ -44,9 +44,10 @@ body {
 .testimonial-container {
     height: 200px;
     width: 50%;
-    margin: 0 auto;
+    margin: 4rem auto;
     padding: 2rem 0;
-    box-sizing: content-box;
+    border: 1px solid black;
+    border-radius: 5%;
 }
 
 .testimonial-container .profilepic {
@@ -71,7 +72,7 @@ body {
 
 .carousel-item {
     height: 100%;
-    background-color: rgb(0, 157, 207);
+    background-color: white;
 }
 
 .person-info {
@@ -80,6 +81,4 @@ body {
 }
 
 .carousel-control-prev-icon,
-.carousel-control-next-icon{
-    filter: invert(1);
-}
+.carousel-control-next-icon{    filter: invert(1);}
