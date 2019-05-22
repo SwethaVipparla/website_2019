@@ -9,3 +9,11 @@
     height: 100%;
     width: auto;
 }
+
+.bg-dark-blue {
+	background-color: #002240;
+}
+
+.txt-dark-blue {
+	color: #002240;
+}
