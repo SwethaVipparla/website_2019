@@ -56,12 +56,12 @@ body {
 }
 
 .testimonial-container .person-info > div,
-.testimonial-container .text{
+.testimonial-container .text {
     margin: 0 auto;
     text-align: center;
 }
 
-.testimonial-container .profilepic img{
+.testimonial-container .profilepic img {
     width: 100%;
     height: 100%;
 }
@@ -81,4 +81,6 @@ body {
 }
 
 .carousel-control-prev-icon,
-.carousel-control-next-icon{    filter: invert(1);}
+.carousel-control-next-icon {
+    filter: invert(1);
+}
