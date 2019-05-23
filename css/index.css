@@ -1,3 +1,5 @@
+@import url("fonts.css");
+
 html,
 body {
     height: 100%;
@@ -12,6 +14,7 @@ body {
     width: 75%;
     position: relative;
     margin-top: 10px;
+    font-family: MegathonBox sans-serif;
 }
 .para {
     max-width: 90vw;
@@ -42,6 +45,7 @@ body {
 .para-head {
     font-weight: bold;
     margin-bottom: 1.2rem !important;
+    color: #002142;
 }
 
 .para-text {
@@ -66,7 +70,12 @@ body {
 .stats-display {
     position: absolute;
     right: 0;
-    bottom: -50%;
+    bottom: -15%;
+    color: #185a9d;
+}
+
+.row-megathon {
+    background-color: rgba(40, 205, 193, 0.47);
 }
 
 /* Testimonial box */
