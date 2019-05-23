@@ -9,7 +9,7 @@ body {
     max-width: 1300px;
 }
 .tile-row {
-    width: 90%;
+    width: 75%;
     position: relative;
     margin-top: 10px;
 }
@@ -39,7 +39,37 @@ body {
     float: left;
 }
 
-/* Testimonial box work */
+.para-head {
+    font-weight: bold;
+    margin-bottom: 1.2rem !important;
+}
+
+.para-text {
+    font-size: 1.2rem;
+    margin-top: 1.2rem !important;
+    margin-bottom: 1.2rem !important;
+}
+
+.cta-btn {
+    padding: 10px 60px;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1.2rem !important;
+}
+
+/* Specific positioning */
+.megathon-image {
+    margin-left: 30%;
+    margin-top: -30%;
+}
+
+.stats-display {
+    position: absolute;
+    right: 0;
+    bottom: -50%;
+}
+
+/* Testimonial box */
 
 .testimonial-container {
     height: 200px;
