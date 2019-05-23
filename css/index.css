@@ -14,7 +14,7 @@ body {
     width: 75%;
     position: relative;
     margin-top: 10px;
-    font-family: MegathonBox sans-serif;
+    font-family: 'MegathonBox', sans-serif;
 }
 .para {
     max-width: 90vw;
