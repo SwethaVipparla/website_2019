@@ -180,7 +180,7 @@ body {
 
 #testimonial-parent {
     /* to give space to the stats text above*/
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
 
     /* because the ancestor must be a positioned element for absolute positioning to work */
     position: relative;
@@ -334,16 +334,14 @@ body {
     background: linear-gradient(
             to right,
             rgba(255, 255, 255, 0.185),
-            rgba(255, 255, 255, 0.178)
+            rgba(255, 255, 255, 0.185)
         ),
         url(../assets/imgs/undraw-world.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-x: calc(100% + 6rem);
-    background-position-y: -6rem;
-    padding: 2rem 0;
-    color: white;
-    width: 100%;
+    background-position-x: calc(100% + 9rem);
+    background-position-y: -9rem;
+    margin-top: 0;
 }
 
 .contact-us .backbox {
@@ -351,4 +349,7 @@ body {
     background-color: rgba(0, 34, 64, 0.637);
     padding: 2rem;
     border-radius: 1rem;
+    margin: 0rem auto;
+    /* margin-bottom: 0; */
+    color: white;
 }
