@@ -329,3 +329,26 @@ body {
 .palette-bg-grey {
     background-color: #ebebeb;
 }
+
+.contact-us {
+    background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.185),
+            rgba(255, 255, 255, 0.178)
+        ),
+        url(../assets/imgs/undraw-world.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: calc(100% + 6rem);
+    background-position-y: -6rem;
+    padding: 2rem 0;
+    color: white;
+    width: 100%;
+}
+
+.contact-us .backbox {
+    /* background-color: rgba(16, 138, 149, 0.678); */
+    background-color: rgba(0, 34, 64, 0.637);
+    padding: 2rem;
+    border-radius: 1rem;
+}
