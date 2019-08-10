@@ -18,7 +18,7 @@ from selenium import webdriver
 from time import sleep
 
 
-YOUR_USER_NAME = "gt"  # CHANGE THIS
+YOUR_USER_NAME = os.environ.get('USER')  # CHANGE THIS
 HOME = "/home/" + YOUR_USER_NAME  # don't change these
 howzhackfile = HOME + '/Downloads/howzhack-registered.xlsx'
 answerCSV = HOME + "/answer.csv"
@@ -75,6 +75,7 @@ passw.submit()
 try:
     if os.path.isfile(howzhackfile):
         os.remove(howzhackfile)
+    if os.path.isfile(answerCSV):
         os.remove(answerCSV)
     # we have to wait for the page to refresh, the last thing that seems to be updated is the title
     WebDriverWait(driver, 10).until(EC.title_contains("HOWZHACK"))
