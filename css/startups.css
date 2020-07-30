@@ -1,3 +1,9 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .main {
     background-color: #fefefe;
     border-radius: 5px;
@@ -30,6 +36,9 @@
 .heading {
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+.year {
     padding-bottom: 10px;
 }
 
