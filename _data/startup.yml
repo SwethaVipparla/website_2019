@@ -1,4 +1,5 @@
 - startup: Company Name
+  img: test.png
   year: 2005
   founder: founder name
   industry: B2B
@@ -7,12 +8,13 @@
   link: www.test.com
   desc: this is sample text about the company
 
-- startup: Company Namesfd
-  year: 2005sd
-  founder: fousdnder name
-  industry: B2Bdsf
-  count: 50dfs
-  funding: ltddf
-  link: www.testsd.com
-  desc: this is sadsmple text about the company
+- startup: ECell IIIT-Hyderabad
+  img: test2.png
+  year: 2015
+  founder: Srinath Nair
+  industry: Entrepreneurship
+  count: 42
+  funding: college
+  link: www.ecell.iiit.ac.in
+  desc: ECell is not a club
 
