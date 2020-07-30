@@ -1,3 +1,46 @@
+---
+---
+
+body {
+    color: #0f2d34;
+}
+.card-width {
+    background-color: white;
+}
+
+.red-text{
+    color:red;
+    font-size: medium;
+}
+.main-head {
+    position: relative;
+    background: url("{{ site.baseurl }}/assets/imgs/summerup.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+}
+@media (min-width: 801px) {
+    .wrap-pic {
+        width: 50%;
+        margin-right: -30%;
+        word-wrap: break-word;
+        float: right;
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrap-pic {
+        width: 0%;
+        visibility: hidden;
+        margin-right: 0%;
+    }
+}
+
+
 .container {
     display: flex;
     justify-content: center;

@@ -2,6 +2,8 @@
 layout: page
 ---
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/startups.css">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/page.css">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/index.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 	crossorigin="anonymous"></script>
@@ -25,48 +27,34 @@ layout: page
 	</div>
 </header>
 
-<div class="container py-5">
-	<div class="row">
-		<div class="col text-justify">
-			"Individual commitment to a group effort - that is what makes a team work, a company work, a society work, a
-			civilization work."
-		</div>
-	</div>
-	<div class="row">
-		<div class="col text-right">
-			- Vince Lombardi
-		</div>
-	</div>
-</div>
-
+{% for startup in site.data.startup %}
 <div class="container-fluid mb-4 pb-4">
 	<div class="row align-self-center" style="float: centre;">
 		<div class=" py-0 my-0 col-12 col-md-6 d-flex text-center justify-content-center align-items-center member">
-			{% for startup in startups.startup %}
 			<div class="main">
 				<div class="inner">
 					<div class="logo">
-						<img src="{{ site.baseurl }}/assets/imgs/startups/{{startup.img}}">
+						<img src="{{ site.baseurl }}/assets/imgs/startups/{{ startup.img }}">
 					</div>
 					<div class="meta">
-						<div class="heading">{startup.name}</div>
-						<div class="year">{startup.year}</div>
-						<div class="founder"><span class="left">Founder: </span>{startup.founder}</div>
-						<div class="industry"><span class="left">Industry: </span>{startup.industry}</div>
-						<div class="industry"><span class="left">Employee Count: </span>{startup.count}</div>
-						<div class="industry"><span class="left">Funding status: </span>{startup.funding}</div>
-						<div class="link"><a href="{{startup.link}}"> {startup.link}</a></div>
+						<div class="heading">{{ startup.name }}</div>
+						<div class="year">{{ startup.year }}</div>
+						<div class="founder"><span class="left">Founder: </span>{{ startup.founder }}</div>
+						<div class="industry"><span class="left">Industry: </span>{{ startup.industry }}</div>
+						<div class="industry"><span class="left">Employee Count: </span>{{ startup.count }}</div>
+						<div class="industry"><span class="left">Funding status: </span>{{ startup.funding }}</div>
+						<div class="link"><a href="{{ startup.link }}"> {{ startup.link }}</a></div>
 					</div>
 				</div>
 				<div class="desc">
-					{startup.desc}
+					{{ startup.desc }}
 				</div>
-			{% endfor %}
 		</div>
 		<br>
 	</div>
 </div>
 
+{% endfor %}
 <script>
 	ScrollReveal().reveal('.member', { interval: 300, easing: 'ease-in-out' });
 	ScrollReveal().reveal('.team-member', { interval: 300, easing: 'ease-in-out' });
