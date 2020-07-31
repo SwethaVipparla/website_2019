@@ -26,11 +26,11 @@ layout: page
 		</div>
 	</div>
 </header>
-
+<div class="startup-container">
 {% for startup in site.data.startup %}
-<div class="container-fluid mb-4 pb-4">
-	<div class="row align-self-center" style="float: centre;">
-		<div class=" py-0 my-0 col-12 col-md-6 d-flex text-center justify-content-center align-items-center member">
+<!-- <div class="container-fluid mb-4 pb-4"> -->
+	<!-- <div class="row align-self-center" style="float: centre;"> -->
+		<!-- <div class=" py-0 my-0 col-12 col-md-6 d-flex text-center justify-content-center align-items-center member"> -->
 			<div class="main">
 				<div class="inner">
 					<div class="logo">
@@ -49,12 +49,15 @@ layout: page
 				<div class="desc">
 					{{ startup.desc }}
 				</div>
-		</div>
-		<br>
-	</div>
+			</div>
+		<!-- </div> -->
+		<!-- <br> -->
+	<!-- </div> -->
+<!-- </div> -->
+{% endfor %}
 </div>
 
-{% endfor %}
+
 <script>
 	ScrollReveal().reveal('.member', { interval: 300, easing: 'ease-in-out' });
 	ScrollReveal().reveal('.team-member', { interval: 300, easing: 'ease-in-out' });
