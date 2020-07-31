@@ -16,7 +16,7 @@
   count: 42
   funding: college
   link: www.ecell.iiit.ac.in
-  desc: ECell is not a club
+  desc: (Insert details here)
 
 - startup: Comp
   img: test.png
@@ -26,9 +26,9 @@
   count: 500
   funding: private
   link: www.test2.com
-  desc: this is sample text about the company
+  desc: This is sample text about the company
 
-- startup: ECell Club
+- startup: ECell IIIT-H
   img: test2.png
   year: 2015
   founder: Amogh Tiwari
