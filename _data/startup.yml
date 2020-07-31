@@ -6,7 +6,7 @@
   count: 50
   funding: ltd
   link: www.test.com
-  desc: this is sample text about the company
+  desc: this is sample text about the company. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 - startup: ECell IIIT-Hyderabad
   img: test2.png
@@ -18,3 +18,22 @@
   link: www.ecell.iiit.ac.in
   desc: ECell is not a club
 
+- startup: Comp
+  img: test.png
+  year: 2001
+  founder: founder
+  industry: B2C
+  count: 500
+  funding: private
+  link: www.test2.com
+  desc: this is sample text about the company
+
+- startup: ECell Club
+  img: test2.png
+  year: 2015
+  founder: Amogh Tiwari
+  industry: Entrepreneurship
+  count: 423
+  funding: college
+  link: www.ecell.iiit.ac.in
+  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
